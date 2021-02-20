@@ -1,0 +1,105 @@
+body{
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #192a56;
+    font-size: 20px;
+    color: #426FE3;
+}
+.btn{
+    color:#426FE3;
+    background: transparent;
+    border: 2px solid #426FE3;
+    border-radius: 10px;
+    width: 7rem;
+    height: 3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #426FE3;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+.container{
+    height: 450px;
+    width: 650px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #f1f2f6;
+    column-gap: 25px;
+    align-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-bottom: 10px #426FE3 solid;
+    border-right: 10px #426FE3 solid;
+    /*box-shadow:  30px 20px 60px #e74c3c;
+    */background-color: linear-gradient();
+}
+
+.imgProducto{
+    height: 370px;
+    width: 300px;
+
+}
+
+.infoProducto{
+    display: grid;
+    grid-template: " colores" 80px
+                    "titulo" 50px
+                    "descripcion" 150px 
+                    "precio-btn" 100px /
+                          300px        ;
+    padding-right: 20px;
+}
+.infoProducto .colores{
+    display: flex;
+    grid-area: colores;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+ .color{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.infoProducto .titulo{
+    grid-area: titulo;
+    align-self: baseline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.infoProducto .descripcion{
+    grid-area: descripcion;
+    padding-left: 30px;
+    text-align: justify;
+
+}
+
+.precio-btn{
+    grid-area:precio-btn;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.precio-btn>*{
+    margin: 0;
+}
+.precio-btn .precio{
+    font-size: 35px;
+}
+ 
+
+.anaranjado{
+    background-color: #e84118;
+}
+.rojo{
+    background-color: #c44569;
+}
+.gris{
+    background-color: #ced6e0;
+}
